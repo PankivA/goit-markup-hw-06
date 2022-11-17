@@ -439,6 +439,11 @@ ul {
   position: absolute;
   right: 8px;
   top: 8px;
+
+}
+
+.icon-modal {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover .icon-modal,
@@ -472,6 +477,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input input:focus + .modal-input-icon {
@@ -517,6 +523,7 @@ ul {
 .modal-input--comment textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .modal-input--comment textarea {
@@ -533,36 +540,36 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.callback-agreemant {
+.modal-agreemant {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-.callback-agreemant,
-.callback-submit {
+.modal-agreemant,
+.modal-submit {
   display: block;
   margin: 0 auto;
 
   text-align: center;
 }
 
-.callback-agreemant {
+.modal-agreemant {
   margin-bottom: 30px;
 }
 
-.callback-agreemant input {
+.modal-agreemant input {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
 }
 
-.callback-agreemant a {
+.modal-agreemant a {
   color: var(--accent-color);
 }
 
-.callback-agreemant-icon {
+.modal-agreemant-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -572,19 +579,19 @@ ul {
   line-height: 1.17;
 }
 
-.callback-agreemant-icon svg {
+.modal-agreemant-icon svg {
   fill: var(--primary-button-color);
 }
 
-.callback-agreemant input:not(:checked) + .callback-agreemant-icon > svg {
+.modal-agreemant input:not(:checked) + .modal-agreemant-icon > svg {
   display: none;
 }
 
-.callback-agreemant input:checked + .callback-agreemant-icon {
+.modal-agreemant input:checked + .modal-agreemant-icon {
   border: 0;
 }
 
-.callback-submit {
+.modal-submit {
   padding: 10px 52px;
   border-radius: 4px;
   border: none;
@@ -595,11 +602,12 @@ ul {
   letter-spacing: 0.06em;
   color: var(--primary-button-color);
   background: var(--accent-color);
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
-.callback-submit:hover {
+.modal-submit:hover {
   background-color: #188ce8;
 }
 
