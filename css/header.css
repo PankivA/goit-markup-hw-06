@@ -1,0 +1,152 @@
+@media only screen and (min-width: 768px) {
+    .header {
+            border-bottom: 1px solid #E7E9FC;
+        }
+}
+
+
+
+.header-container {
+display: flex;
+align-items: center;
+}
+
+.logo {
+    padding: 16px 0;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.334;
+    letter-spacing: 0.03em;
+}
+
+@media only screen and (min-width: 768px) {
+    padding: 24px 0;
+}
+
+.logo-accent {
+    color: #4D5AE5;
+}
+
+.navigation {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .navigation {
+        display: block;
+        margin-left: 120px;
+        }
+    .menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-link {
+    display: block;
+    padding: 24px 0px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link.current {
+    position: relative;
+    color: #404BBF;
+}
+
+.menu-link.current::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #404BBF;
+}
+
+.menu-link:hover, .menu-link:focus {
+    color: #404BBF;
+}
+}
+
+@media only screen and (min-width: 1158px) {
+    .navigation {
+        margin-left: 76px;
+    }
+}
+
+.address {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .address {
+        display: block;
+        margin-left: auto;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 10px 0;
+    }
+
+    .contacts-link {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .contacts-link:hover, .contacts-link:focus {
+        color: #404BBF;
+}
+}
+
+@media only screen and (min-width: 1158px) {
+    .address {
+        margin-left: auto;
+        }
+    .contacts {
+        flex-direction: row;
+        margin: 0;
+        gap: 40px;
+    }
+    .contacts-link {
+        padding: 24px 0px;
+        font-size: 16px;
+        line-height: 1.50;
+        letter-spacing: 0.02em;
+    }
+}
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #2E2F42;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+.menu-btn-icon {
+fill: currentColor;
+}
+
+
+
