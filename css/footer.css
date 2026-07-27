@@ -30,7 +30,7 @@
             column-gap: 24px;
             justify-content: start;
             align-items: start;
-            padding: 0 108px;
+            padding: 0 92px;
         }
 }
 
@@ -89,6 +89,9 @@
 }
 
 .footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
 }
 
@@ -97,13 +100,6 @@
     background-color:#31D0AA;
 }
 
-
-
-/* @media only screen and (min-width: 768px) {
-    .footer-subscribe {
-        width: 264px;
-    }
-} */
 
 
 @media only screen and (min-width: 1158px) {

@@ -51,38 +51,7 @@ transition-property: opacity, transform;
     transition-delay: 300ms;
 }
 
-.modal-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    border-radius: 50%;
-    background-color: #E7E9FC;
-    border: 1px solid rgba(46, 47, 66, 0.40);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: background-color, border-color;
-}
 
-.modal-button:hover,
-.modal-button:focus {
-background-color: #404BBF;
-border: 1px solid #404BBF;
-}
-
-.modal-button-icon {
-    fill: #2E2F42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-button:hover .modal-button-icon,
-.modal-button:focus .modal-button-icon {
-    fill: #FFFFFF;
-}
 
 .backdrop-header {
     margin-bottom: 16px;
